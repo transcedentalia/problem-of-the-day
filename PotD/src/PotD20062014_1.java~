@@ -33,23 +33,12 @@ public class PotD20062014_1 {
 	}
 	
 	public static void printArray(char[] s) {
-		
-		if(s == null)
-			return;
-		
 		for(int i = 0; i < s.length; ++i)
 			System.out.print(s[i]);
-		
-		System.out.println();
 	}
 	
 	public static void main(String[] args) {
-		printArray(removeDuplicate(null));
-		printArray(removeDuplicate("".toCharArray()));
-		printArray(removeDuplicate("a".toCharArray()));
-		printArray(removeDuplicate("aaaaaaaaaaaa".toCharArray()));
-		printArray(removeDuplicate("abcdefghijklmnop".toCharArray()));
-		printArray(removeDuplicate("aabbbooojtypppooe".toCharArray()));
+		printArray(removeDuplicate("ff".toCharArray()));
 
 	}
 
