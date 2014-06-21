@@ -1,10 +1,15 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class PotD20062014_1 {
 
-	public static char[] removeDuplicate(char[] s) {
+	/*
+	 * Complexity: O(n^3)
+	 */
+	public static char[] removeDuplicateV1(char[] s) {
 		if(s == null)
 			return null;
 		
@@ -32,6 +37,34 @@ public class PotD20062014_1 {
 		return s;
 	}
 	
+	/*
+	 * Complexity: O(n)
+	 */
+	public static char[] removeDuplicateV2(char[] s) {
+		if(s == null)
+			return null;
+		
+		if(s.length == 1)
+			return s;
+		
+		int oldPos = 0, newPos = 0;
+		Set<Character> uniqChars = new HashSet<Character>();
+		
+		while(oldPos < s.length) {
+		
+			if( !uniqChars.contains(s[oldPos])) {
+				uniqChars.add(s[oldPos]);
+				s[newPos] = s[oldPos];
+				newPos ++;
+			}
+			
+			oldPos ++;
+		}
+		
+		return Arrays.copyOf(s, newPos);
+
+	}
+	
 	public static void printArray(char[] s) {
 		
 		if(s == null)
@@ -44,12 +77,19 @@ public class PotD20062014_1 {
 	}
 	
 	public static void main(String[] args) {
-		printArray(removeDuplicate(null));
-		printArray(removeDuplicate("".toCharArray()));
-		printArray(removeDuplicate("a".toCharArray()));
-		printArray(removeDuplicate("aaaaaaaaaaaa".toCharArray()));
-		printArray(removeDuplicate("abcdefghijklmnop".toCharArray()));
-		printArray(removeDuplicate("aabbbooojtypppooe".toCharArray()));
+		printArray(removeDuplicateV1(null));
+		printArray(removeDuplicateV1("".toCharArray()));
+		printArray(removeDuplicateV1("a".toCharArray()));
+		printArray(removeDuplicateV1("aaaaaaaaaaaa".toCharArray()));
+		printArray(removeDuplicateV1("abcdefghijklmnop".toCharArray()));
+		printArray(removeDuplicateV1("aabbbooojtypppooe".toCharArray()));
+		
+		printArray(removeDuplicateV2(null));
+		printArray(removeDuplicateV2("".toCharArray()));
+		printArray(removeDuplicateV2("a".toCharArray()));
+		printArray(removeDuplicateV2("aaaaaaaaaaaa".toCharArray()));
+		printArray(removeDuplicateV2("abcdefghijklmnop".toCharArray()));
+		printArray(removeDuplicateV2("aabbbooojtypppooe".toCharArray()));
 
 	}
 
