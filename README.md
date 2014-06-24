@@ -10,4 +10,7 @@ PotD20062014_1 - delete duplicate characters from a string.
 PotD20062014_2 - decide if two strings are palindroms/anagrams.
 PotD21062014_1 - replace all spaces in a string with %20.
 PotD21062014_2 - rotate a n*n matrix 90 clock wise.
+PotD23062014_1 - if an element of a matrix is 0, zeroize its line and column
+PotD23062014_2 - check if one string is a rotation of another
+PotD24062014_1 - add/delete node from list, reverse a list
 
