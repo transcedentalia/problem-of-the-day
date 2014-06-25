@@ -1,6 +1,6 @@
 public class PotD24062014_1 {
 
-	public static Node addNode(Node head, int data) {
+	public static Node addNodeRear(Node head, int data) {
 		if(head == null)
 			return new Node(data);
 		
@@ -13,7 +13,18 @@ public class PotD24062014_1 {
 		return head;
 	}
 	
-	public static Node deleteNode(Node n, int data) {
+	public static Node addNodeFront(Node head, int data) {
+		if(head == null)
+			return new Node(data);
+		
+		Node temp = new Node(data);
+		temp.next = head;
+		head = temp;
+		
+		return head;
+	}
+	
+	public static Node deleteNodeV1(Node n, int data) {
 		if(n == null)
 			return null;
 		
@@ -25,6 +36,25 @@ public class PotD24062014_1 {
 		while(n.next != null) {
 			if(n.next.data == data) {
 				n.next = n.next.next;
+			}
+			else {
+				n = n.next;
+			}
+		}
+		return head;
+	}
+	
+	public static Node deleteNodeV2(Node n, int data) {
+		if(n == null)
+			return null;
+		
+		Node head = n;
+		while(n != null) {
+			if(n.data == data) {
+				if(n.next != null) {
+					n.data = n.next.data;
+					n.next = n.next.next;
+				}
 			}
 			else {
 				n = n.next;
@@ -64,19 +94,19 @@ public class PotD24062014_1 {
 		System.out.println();
 	}
 	
-
 	public static void main(String[] args) {
 		Node head = null;
 		
 		for(int i = 0; i < 5; ++i) {
-			head = addNode(head, i);
+			head = addNodeRear(head, i);
 		}
 		printList(head);
 		
-		head = reverseList(head);
-		head = deleteNode(head, 4);
+		//head = reverseList(head);
+		head = deleteNodeV1(head, 4);
 		
 		printList(head);
 	}
 
 }
+
