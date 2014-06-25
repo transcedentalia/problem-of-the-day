@@ -12,5 +12,7 @@ PotD21062014_1 - replace all spaces in a string with %20.
 PotD21062014_2 - rotate a n*n matrix 90 clock wise.
 PotD23062014_1 - if an element of a matrix is 0, zeroize its line and column
 PotD23062014_2 - check if one string is a rotation of another
-PotD24062014_1 - add/delete node from list, reverse a list
+PotD24062014_1 - add node front/reaer
+               - delete V1/V2 node from list, reverse a list
+PotD25062014_1 - get/delete middle node, delete kth node from rear
 
