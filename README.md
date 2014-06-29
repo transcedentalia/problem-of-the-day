@@ -18,4 +18,5 @@ PotD25062014_1 - get/delete middle node, delete kth node from rear
 PotD26062014_1 - remove duplicate elements from a list
 			   - get the start node from the loop inside a list
 			   - add two lists as two numbers
+PotD29062014_1 - implemement stack operations: pop, peek, push, min
 
