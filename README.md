@@ -15,4 +15,7 @@ PotD23062014_2 - check if one string is a rotation of another
 PotD24062014_1 - add node front/reaer
                - delete V1/V2 node from list, reverse a list
 PotD25062014_1 - get/delete middle node, delete kth node from rear
+PotD26062014_1 - remove duplicate elements from a list
+			   - get the start node from the loop inside a list
+			   - add two lists as two numbers
 
