@@ -19,4 +19,6 @@ PotD26062014_1 - remove duplicate elements from a list
 			   - get the start node from the loop inside a list
 			   - add two lists as two numbers
 PotD29062014_1 - implemement stack operations: pop, peek, push, min
+PotD29062014_2 - implemement a queue using two stacks
+PotD01072014_1 - implemementend BST add/delete Node and the three tree passes
 
