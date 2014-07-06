@@ -21,4 +21,6 @@ PotD26062014_1 - remove duplicate elements from a list
 PotD29062014_1 - implemement stack operations: pop, peek, push, min
 PotD29062014_2 - implemement a queue using two stacks
 PotD01072014_1 - implemementend BST add/delete Node and the three tree passes
+PotD06072014_1 - implemented inorder/preorder/postorder iteratively
+PotD06072014_2 - implemented level by level tree traversal
 
