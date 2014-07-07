@@ -31,38 +31,82 @@ public class PotD01072014_1 {
 		}
 		
 		if(root.data < newNode.data) {
+			newNode.parent = root;
 			root.right = addNodeBST(root.right, newNode);
 		}
 		
 		if(root.data > newNode.data) {
+			newNode.parent = root;
 			root.left = addNodeBST(root.left, newNode);
 		}
 			
 		return root;
 	}
 	
-	public static Node deleteNodeBST(Node root, int val)
+	public static Node deleteNodeBST(Node root, int val, int direction)
 	{
+		
+		if(root == null) {
+			return null;
+		}
+		
 		if(root.data == val) {
 			
-			Node temp = root.right;
-			while(temp.left != null) {
-				temp = temp.left;
+			if(root.left == null && root.right == null ) {
+				if(root.parent != null) {
+					if(direction == 0) {
+						root.parent.left = null;
+					}
+					else {
+						root.parent.right = null;
+					}
+				}else {
+					//this is the root
+					root = null;
+				}
+			}else if(root.right != null) {
+						
+				Node temp = root.right;
+				if(temp.left == null) {
+					root.data = temp.data;
+					root.right = temp.right;
+				}else {
+					while(temp.left != null) {
+						temp = temp.left;
+					}
+					
+					root.data = temp.data;
+					temp.parent.left = null;
+				}
+				
+			}else if(root.left != null) {
+				
+				Node temp = root.left;
+				if(temp.right == null) {
+					root.data = temp.data;
+					root.left = temp.left;
+				}else {
+					while(temp.right != null) {
+						temp = temp.right;
+					}
+					
+					root.data = temp.data;
+					temp.parent.right = null;
+				}
+				
 			}
-			
-			root = temp;
-			temp = null;
-			
-			return root;
 		}
 		
 		if(root.data < val){
-			root = root.right;
+			deleteNodeBST(root.right, val, 1);
 		}else {
-			root = root.left;
+			deleteNodeBST(root.left, val, 0);
 		}
+		
+		return root;
 
 	}
+	
 	public static void preorder(Node root) {
 		if(root != null) {
 			System.out.print(root.data + " ");
@@ -110,6 +154,9 @@ public class PotD01072014_1 {
 		
 		System.out.println(getMin(root).data);
 		System.out.println(getMax(root).data);
+		
+		deleteNodeBST(root, 9, 0);
+		inorder(root);
+		System.out.println();
 	}
-
 }

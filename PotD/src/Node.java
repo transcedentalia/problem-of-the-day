@@ -1,8 +1,9 @@
 public class Node{
+	
 	public int data;
-	public int min;
 	public Node next;
 	
+	public Node parent;
 	public Node left;
 	public Node right;
 	
@@ -20,5 +21,6 @@ public class Node{
 		this.data = data;
 		this.left = left;
 		this.right = right;
+		this.parent = null;
 	}
 }
