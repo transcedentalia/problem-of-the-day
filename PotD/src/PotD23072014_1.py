@@ -1,6 +1,6 @@
 __author__ = 'alina'
 
-def main(mystring, n):
+def nParts(mystring, n):
     '''
     Divide a string in N equal parts
     :param mystring: input string
@@ -21,4 +21,4 @@ def main(mystring, n):
 
 if __name__ == "__main__":
     mystring = "testStringsollaris"
-    main(mystring, 4)
+    nParts(mystring, 4)
