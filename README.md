@@ -30,4 +30,5 @@ PotD23072014_1 - Divide a string in N equal parts
 PotD23072014_2 - Returns the first character in a string that appears exactly one time.
 PotD27072014_1 - Return the maximum occurring character in a string (T: O(n))
 PotD27072014_2 - Remove all duplicates from a string (T: O(n))
+PotD27072014_3 - Given two strings, remove characters in the first string which are present in the second string (T: O(m+n))
 
