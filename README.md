@@ -16,17 +16,18 @@ PotD24062014_1 - add node front/reaer
                - delete V1/V2 node from list, reverse a list
 PotD25062014_1 - get/delete middle node, delete kth node from rear
 PotD26062014_1 - remove duplicate elements from a list
-	       - get the start node from the loop inside a list
-	       - add two lists as two numbers
+	           - get the start node from the loop inside a list
+	           - add two lists as two numbers
 PotD29062014_1 - implemented stack operations: pop, peek, push, min
 PotD29062014_2 - implemented a queue using two stacks
 PotD01072014_1 - implemented BST add/delete Node 
                - implemented inorder/preorder/postorder recursively
-	       - implemented getMin, getMax node of a BST
-PotD02072014_2 - implemented trees for arithmetic expressions with unary/binary
-					operators
+	           - implemented getMin, getMax node of a BST
+PotD02072014_2 - implemented trees for arithmetic expressions with unary/binary	operators
 PotD06072014_1 - implemented inorder/preorder/postorder iteratively
 PotD06072014_2 - implemented level by level tree traversal
 PotD23072014_1 - Divide a string in N equal parts
 PotD23072014_2 - Returns the first character in a string that appears exactly one time.
+PotD27072014_1 - Return the maximum occurring character in a string (T: O(n))
+PotD27072014_2 - Remove all duplicates from a string (T: O(n))
 
