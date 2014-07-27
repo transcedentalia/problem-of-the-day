@@ -1,6 +1,6 @@
 __author__ = 'alina'
 
-def removeDuplicated(mystring):
+def removeDuplicated(myString):
     if myString == None:
         return
     
@@ -15,5 +15,5 @@ def removeDuplicated(mystring):
     print mystring[:newPos]
 
 if __name__ == "__main__":
-    mystring = bytearray("geeks for geeks", "ascii")
-    removeDuplicated(mystring)
+    myString = bytearray("geeks for geeks", "ascii")
+    removeDuplicated(myString)
