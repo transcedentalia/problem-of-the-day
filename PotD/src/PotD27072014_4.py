@@ -1,6 +1,7 @@
 __author__ = 'alina'
 
-def reverseString(myString
+def reverseString(myString):
+
     if myString == None:
         return
 
@@ -12,6 +13,22 @@ def reverseString(myString
 
     print myString
 
+def reverseStringRecL(myString, i):
+    if not myString:
+        return
+
+    if i < len(myString):
+        i += 1
+        reverseStringRecL(myString, i)
+        print myString[i - 1]
+
+def reverseStringRecP(s):
+    if s:
+        reverseStringRecP(s[1:])
+        print s[0]
+
 if __name__ == "__main__":
     myString = bytearray("geeks for geeks", "ascii")
-    reverseString(myString)
+    #reverseString(myString)
+    reverseStringRecL("geeks for geeks", 0)
+    #reverseStringRecP("geeks for geeks")
