@@ -32,4 +32,5 @@ PotD27072014_1 - Return the maximum occurring character in a string (T: O(n))
 PotD27072014_2 - Remove all duplicates from a string (T: O(n))
 PotD27072014_3 - Given two strings, remove characters in the first string which are present in the second string (T: O(m+n))
 PotD27072014_4 - Reverse a string (T: O(n), S: O(1))
+PotD27072014_5 - Print all permutations of a given string
 
