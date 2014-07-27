@@ -8,23 +8,13 @@ def maxCharacter(mystring):
     '''
 
     charsFrequencies= {}
-
     for c in mystring:
-        if charsFrequencies.__contains__(c):
-            freqForCurrentChar = charsFrequencies.get(c)
-            freqForCurrentChar += 1
-            charsFrequencies[c] = freqForCurrentChar
+        if c in charsFrequencies:
+            charsFrequencies[c] += 1
         else:
             charsFrequencies[c] = 1
 
-    max = 0
-    maxChar = None
-    for k, v in charsFrequencies.iteritems():
-        if v > max:
-            max = v
-            maxChar = k
-
-    print maxChar, max
+    print max(charsFrequencies.items(), key = lambda x : x[1])
 
 if __name__ == "__main__":
     myString = "teststring"
