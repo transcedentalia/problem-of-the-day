@@ -1,11 +1,11 @@
 __author__ = 'alina'
 
 def removeDuplicated(mystring):
-    chars = []
+    chars = set()
     newPos = 0
     for c in mystring:
         if c not in chars:
-            chars.append(c)
+            chars.add(c)
             mystring[newPos] = c
             newPos += 1
 
