@@ -6,6 +6,8 @@ def maxCharacter(mystring):
     :param mystring: input string
     :return:
     '''
+    if myString == None:
+        return
 
     charsFrequencies= {}
     for c in mystring:
