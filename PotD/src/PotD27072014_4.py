@@ -1,6 +1,9 @@
 __author__ = 'alina'
 
-def reverseString(myString):
+def reverseString(myString
+    if myString == None:
+        return
+
     for i, c in enumerate(myString):
         if i == len(myString) / 2:
             break
