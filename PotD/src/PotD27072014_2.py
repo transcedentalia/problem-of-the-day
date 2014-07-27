@@ -1,6 +1,9 @@
 __author__ = 'alina'
 
 def removeDuplicated(mystring):
+    if myString == None:
+        return
+    
     chars = set()
     newPos = 0
     for c in mystring:
