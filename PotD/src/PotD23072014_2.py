@@ -1,6 +1,6 @@
 __author__ = 'alina'
 
-def main(mystring):
+def minChar(mystring):
     '''
     Returns the first character in a string that appears exactly one time.
     :param mystring: input string.
@@ -24,5 +24,5 @@ def main(mystring):
             break
 
 if __name__ == "__main__":
-    mystring = "perhonen"
-    main(mystring)
+    mystring = "testString"
+    minChar(mystring)
