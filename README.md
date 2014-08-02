@@ -33,4 +33,7 @@ PotD27072014_2 - Remove all duplicates from a string (T: O(n))
 PotD27072014_3 - Given two strings, remove characters in the first string which are present in the second string (T: O(m+n))
 PotD27072014_4 - Reverse a string (T: O(n), S: O(1))
 PotD27072014_5 - Print all permutations of a given string
+PotD02082014_1 - Check whether a string is a interleaving of two other given strings (the two given string has all different characters).
+PotD02082014_2 - Given a string, find its longest palindromic substring. (T: O(n^2), S: O(1))
+
 
