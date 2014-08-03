@@ -38,5 +38,5 @@ PotD02082014_2 - Given a string, find its longest palindromic substring. (T: O(n
 PotD02082014_3 - Count words in a given sentence (separators are “ “, “\n” and “\t”) (T: O(n), S: O(1))
 PotD02082014_4 - Given two strings find out that one string is a rotation of the other. (T: O(n), S: O(1))
 PotD03082014_1 - Given a string and a pattern, find out if the pattern matches the string. The pattern has the following 		 wildcards: * --> Matches with 0 or more instances of the precedent character. ? --> Matches with 0 or 1 			 instance of the precedent character.
-
+PotD03082014_2 - Write your own atoi function (ascii to int) (T: O(n), S: O(1))
 
