@@ -33,6 +33,10 @@ PotD27072014_2 - Remove all duplicates from a string (T: O(n))
 PotD27072014_3 - Given two strings, remove characters in the first string which are present in the second string (T: O(m+n))
 PotD27072014_4 - Reverse a string (T: O(n), S: O(1))
 PotD27072014_5 - Print all permutations of a given string
+PotD30072014_1 - Reversere words in a given text (T: O(n), S: O(1))
+PotD30072014_2 - Given two strings, find the first occurrence of the second string in the first string. Naive -> O(m * (n - m + 1))
+PotD30072014_3 - Convert a string to its run length encoding. (T: O(n))
+PotD30072014_4 - Find the longest substring without repeating characters. (T: O(n), S: constant auxiliary space)
 PotD02082014_1 - Check whether a string is a interleaving of two other given strings (the two given string has all different characters).
 PotD02082014_2 - Given a string, find its longest palindromic substring. (T: O(n^2), S: O(1))
 PotD02082014_3 - Count words in a given sentence (separators are “ “, “\n” and “\t”) (T: O(n), S: O(1))
