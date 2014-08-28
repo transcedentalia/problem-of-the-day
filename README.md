@@ -48,5 +48,10 @@ PotD06082014_1 - Rotate a given string by k. (T: O(n), S: O(1))
 PotD08082014_1 - Given an array of strings, find if the given strings can be chained to form a circle. A string X can be put before another string Y in circle if the last character of X is same as first character of Y.
 PotD16082014_1 - Given two strings X and Y, find the length of the longest common subsequence.
 PotD16082014_1 - Given two strings X and Y, find the length of the longest common substring.
-
-
+PotD28082014_1 - Write a function that gets the nth element from a list
+               - Given a pointer to a node in a singly linked list delete that node
+               - Reverse a singly linked list iteratively
+PotD28082014_2 - Write a function to get the nth node from the end of a singly linked list
+			   - Write a function to get the middle of a list
+               - Write a function to delete a list/ a node of a list
+               - Write a function that counts the number of times a given int occurs in a list
