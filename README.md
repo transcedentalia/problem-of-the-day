@@ -55,3 +55,11 @@ PotD28082014_2 - Write a function to get the nth node from the end of a singly l
 			   - Write a function to get the middle of a list
                - Write a function to delete a list/ a node of a list
                - Write a function that counts the number of times a given int occurs in a list
+PotD29082014_1 - Detect a loop in singly linked list
+PotD02092014_1 - Get the average of the elements of a singly linked list
+			   - Reverse a doubly linked list
+               - Remove duplicates from an unsorted linked list
+               - Remove duplicates from a sorted linked list
+               - Reverse a singly linked list recursively
+               - Insert a new node in a sorted singly linked list
+

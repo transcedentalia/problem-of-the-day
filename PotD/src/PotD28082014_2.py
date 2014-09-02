@@ -78,12 +78,13 @@ class LinkedList:
             return
 
         while node:
-            if node.next:
-                if node.next.info == k:
-                    node = node.next.next
-                    return
-                else:
-                    node = node.next
+            if not node.next:
+                break;
+            if node.next.info == k:
+                node.next = node.next.next
+                return
+            else:
+                node = node.next
 
 
 if __name__ == "__main__":
@@ -95,5 +96,5 @@ if __name__ == "__main__":
     #print ll.getNthElementEnd(3).info
     #print ll.getMiddleElement().info
     #print ll.countElement(3)
-    ll.delNode(3)
+    ll.delNode(0)
     ll.printList()
