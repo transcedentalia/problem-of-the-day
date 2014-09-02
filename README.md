@@ -62,4 +62,8 @@ PotD02092014_1 - Get the average of the elements of a singly linked list
                - Remove duplicates from a sorted linked list
                - Reverse a singly linked list recursively
                - Insert a new node in a sorted singly linked list
+               - Move last element to first in a singly linked list
+               - Pairwise swap elements in a given list
+               - "Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed."
+               - Given a Singly Linked List, starting from the second node delete all alternate nodes of it
 

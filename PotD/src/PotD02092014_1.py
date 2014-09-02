@@ -14,11 +14,22 @@ class DoubleNode:
 class LinkedList:
     def __init__(self):
         self.head = None
+        self.last = None
 
-    def addNode(self, info=None, next=None):
+    def addNodeFront(self, info=None, next=None):
         newNode = Node(info, next)
         newNode.next = self.head
         self.head = newNode
+
+    def addNodeRear(self, info=None, next=None):
+        newNode = Node(info, next)
+
+        if not self.head:
+            self.head = self.last = newNode
+            return
+
+        self.last.next = newNode
+        self.last = newNode
 
     def addNodeInSortedList(self, info):
         if not info or not self.head:
@@ -115,6 +126,43 @@ class LinkedList:
         node.next = None
         return temp
 
+    def moveLastNodeToHead(self):
+        if not self.head:
+            return
+        node = self.head
+
+        temp = None
+        while node.next:
+            if not node.next.next:
+                temp = node
+            node = node.next
+
+        temp.next = None
+        node.next = self.head
+        self.head = node
+
+    def swapNodesPairwise(self):
+        if not self.head:
+            return
+        node = self.head
+        while node.next:
+            node.info, node.next.info = node.next.info, node.info
+            if not node.next.next:
+                break
+            node = node.next.next
+
+    def deleteAlternateNodes(self):
+        if not self.head:
+            return
+        node = self.head
+
+        while node:
+            if not node.next:
+                break
+            node.next = node.next.next
+            node = node.next
+
+
 class DoubleLinkedList:
     def __init__(self):
         self.head = None
@@ -148,25 +196,47 @@ class DoubleLinkedList:
             node.next, node.prev = node.prev, node.next
             node = temp
 
+def intersectLists(l1, l2):
+    l3 = LinkedList()
+    node1 = l1.head
+    node2 = l2.head
+
+    while node1 or node2:
+        if node1:
+            if node2:
+                if node1.info < node2.info:
+                    l3.addNodeRear(node1.info)
+                    node1 = node1.next
+                else:
+                    l3.addNodeRear(node2.info)
+                    node2 = node2.next
+            else:
+                l3.addNodeRear(node1.info)
+                node1 = node1.next
+        else:
+            l3.addNodeRear(node2.info)
+            node2 = node2.next
+    return l3
+
 if __name__ == "__main__":
     ll = LinkedList()
     '''
-    ll.addNode(5)
-    ll.addNode(10)
-    ll.addNode(0)
+    ll.addNodeFront(5)
+    ll.addNodeFront(10)
+    ll.addNodeFront(0)
     print ll.getAverage()
 
     for i in range(5):
-        ll.addNode(5)
+        ll.addNodeFront(5)
     ll.removeDuplicatesFromSortedSet()
     ll.printList()
 
-    ll.addNode(1)
-    ll.addNode(2)
-    ll.addNode(3)
-    ll.addNode(4)
-    ll.addNode(5)
-    ll.addNode(6)
+    ll.addNodeFront(1)
+    ll.addNodeFront(2)
+    ll.addNodeFront(3)
+    ll.addNodeFront(4)
+    ll.addNodeFront(5)
+    ll.addNodeFront(6)
     # ll.removeDuplicatesFromSortedList()
     ll.printList()
     node = ll.head
@@ -184,15 +254,34 @@ if __name__ == "__main__":
     dll.printList()
 
     '''
-    ll.addNode(7)
-    ll.addNode(5)
-    ll.addNode(3)
-    ll.addNode(2)
+    ll.addNodeFront(7)
+    ll.addNodeFront(5)
+    ll.addNodeFront(4)
+    ll.addNodeFront(3)
+    ll.addNodeFront(2)
 
     ll.printList()
     #ll.removeDuplicatesFromUnsortedList()
-    ll.addNodeInSortedList(8)
+    #ll.addNodeInSortedList(8)
+    #ll.moveLastNodeToHead()
+    ll.swapNodesPairwise()
     ll.printList()
+
+    l1 = LinkedList()
+    l1.addNodeRear(1)
+    l1.addNodeRear(5)
+    l1.addNodeRear(6)
+    l1.addNodeRear(10)
+
+    l2 = LinkedList()
+    l2.addNodeRear(2)
+    l2.addNodeRear(7)
+    l2.addNodeRear(8)
+
+    intersectLists(l1, l2).printList()
+
+    l1.deleteAlternateNodes()
+    l1.printList()
 
 
 
