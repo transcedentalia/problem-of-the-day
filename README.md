@@ -16,13 +16,13 @@ PotD24062014_1 - add node front/reaer
                - delete V1/V2 node from list, reverse a list
 PotD25062014_1 - get/delete middle node, delete kth node from rear
 PotD26062014_1 - remove duplicate elements from a list
-	           - get the start node from the loop inside a list
-	           - add two lists as two numbers
+	       - get the start node from the loop inside a list
+	       - add two lists as two numbers
 PotD29062014_1 - implemented stack operations: pop, peek, push, min
 PotD29062014_2 - implemented a queue using two stacks
 PotD01072014_1 - implemented BST add/delete Node 
                - implemented inorder/preorder/postorder recursively
-	           - implemented getMin, getMax node of a BST
+	       - implemented getMin, getMax node of a BST
 PotD02072014_2 - implemented trees for arithmetic expressions with unary/binary	operators
 PotD06072014_1 - implemented inorder/preorder/postorder iteratively
 PotD06072014_2 - implemented level by level tree traversal
@@ -52,18 +52,19 @@ PotD28082014_1 - Write a function that gets the nth element from a list
                - Given a pointer to a node in a singly linked list delete that node
                - Reverse a singly linked list iteratively
 PotD28082014_2 - Write a function to get the nth node from the end of a singly linked list
-			   - Write a function to get the middle of a list
+	       - Write a function to get the middle of a list
                - Write a function to delete a list/ a node of a list
                - Write a function that counts the number of times a given int occurs in a list
 PotD29082014_1 - Detect a loop in singly linked list
 PotD02092014_1 - Get the average of the elements of a singly linked list
-			   - Reverse a doubly linked list
+	       - Reverse a doubly linked list
                - Remove duplicates from an unsorted linked list
                - Remove duplicates from a sorted linked list
                - Reverse a singly linked list recursively
                - Insert a new node in a sorted singly linked list
                - Move last element to first in a singly linked list
                - Pairwise swap elements in a given list
-               - "Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed."
+               - Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed.
+               - Write a function that takes two lists, each of which is sorted in increasing order, and merges the two together into one list which is in increasing order.
                - Given a Singly Linked List, starting from the second node delete all alternate nodes of it
 
