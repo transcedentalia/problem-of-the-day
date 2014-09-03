@@ -67,4 +67,7 @@ PotD02092014_1 - Get the average of the elements of a singly linked list
                - Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed.
                - Write a function that takes two lists, each of which is sorted in increasing order, and merges the two together into one list which is in increasing order.
                - Given a Singly Linked List, starting from the second node delete all alternate nodes of it
+PotD03092014_1 - Write a function that takes one list and divides up its nodes to make two smaller lists. The sublists should be made from alternating elements in the original list.
+               - Check if two lists are identical
+               - Write a function to insert a new value in a sorted Circular Linked List (CLL)
 
