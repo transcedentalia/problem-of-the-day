@@ -70,4 +70,5 @@ PotD02092014_1 - Get the average of the elements of a singly linked list
 PotD03092014_1 - Write a function that takes one list and divides up its nodes to make two smaller lists. The sublists should be made from alternating elements in the original list.
                - Check if two lists are identical
                - Write a function to insert a new value in a sorted Circular Linked List (CLL)
-
+               - Split a circular singly linked list in two halves
+               - Add two numbers represented by linked lists
