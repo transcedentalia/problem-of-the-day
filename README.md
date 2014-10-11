@@ -72,3 +72,16 @@ PotD03092014_1 - Write a function that takes one list and divides up its nodes t
                - Write a function to insert a new value in a sorted Circular Linked List (CLL)
                - Split a circular singly linked list in two halves
                - Add two numbers represented by linked lists
+PotD08102014_1 - Compute the number of nodes in a binary tree (recursively and iteratively)
+			   - Preorder traversal (recursively and iteratively)
+			   - Inorder traversal (recursively and iteratively)
+               - Postorder traversal (recursively and iteratively)
+			   - Compute the height of a binary tree (recursively and iteratively)
+               - Level order traversal (BFS)
+               - Write a program to delete a binary tree.
+			   - Check that a binary tree is BST or not
+			   - Count the number of leaf nodes in a binary tree
+PotD10102014_1 - Find the minimum node in a BST (O(n))
+               - Given a binary tree, print out all of its root-to-leaf paths one per line
+               - Find the diameter of a binary tree (O(n))
+               - Check if a binary tree is balanced.
