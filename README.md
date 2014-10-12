@@ -85,3 +85,6 @@ PotD10102014_1 - Find the minimum node in a BST (O(n))
                - Given a binary tree, print out all of its root-to-leaf paths one per line
                - Find the diameter of a binary tree (O(n))
                - Check if a binary tree is balanced.
+PotD11102014_1 - Lowest common ancestor in a BST (O(h))
+			   - Level order traversal in spiral form(recursively and iteratively)
+
