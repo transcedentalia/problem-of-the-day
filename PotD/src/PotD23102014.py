@@ -53,6 +53,45 @@ def printBFS(graphDict, startNode):
                 queue.append(neigh)
                 visited[neigh] = 1
 
+def printDFS(graphDict, startNode, visited):
+    currentNeighbours = graphDict[startNode]
+
+    visited[startNode] = 1
+    print startNode,
+    for neigh in currentNeighbours:
+        if not visited[neigh]:
+            printDFS(graphDict, neigh, visited)
+
+def topologicalSort(graphDict):
+    result = []
+
+    inEdgesPerNode = [0] * (len(graphDict) + 1)
+    for node, neighbours in graphDict.iteritems():
+        for neigh in neighbours:
+            inEdgesPerNode[neigh] += 1
+
+    nodesWithoutInEdges = []
+    for node, edges in enumerate(inEdgesPerNode):
+        if edges == 0 and node != 0:
+            nodesWithoutInEdges.append(node)
+
+    while nodesWithoutInEdges:
+        currentNode = nodesWithoutInEdges.pop()
+        result.append(currentNode)
+
+        currentNodeNeighbours = graphDict[currentNode]
+        for neigh in currentNodeNeighbours:
+            inEdgesPerNode[neigh] -= 1
+            if inEdgesPerNode[neigh] == 0:
+                nodesWithoutInEdges.append(neigh)
+
+    for node in inEdgesPerNode:
+        if node != 0:
+            print "The graph is cyclic."
+            return
+
+    print result
+
 if __name__ == "__main__":
     print nthFibonacciRec(10)
     print nthFibonacciIter(10)
@@ -64,5 +103,11 @@ if __name__ == "__main__":
     print myList
     countingSort(myList)
 
-    graphDict = {1: [2, 3, 4], 2: [1, 3, 4, 5], 3: [1, 2, 6], 4: [1, 2, 5, 6], 5: [2, 4], 6:[3, 4]}
-    printBFS(graphDict, 1)
+    graphDict = {1: [2, 3], 2: [3, 4], 3: [], 4: [6], 5: [4, 6], 6:[]}
+    print "BFS", printBFS(graphDict, 1)
+    print "DFS", printDFS(graphDict, 1, (len(graphDict) + 1) * [0])
+    print "TopologicalSort", topologicalSort(graphDict)
+
+
+
+
