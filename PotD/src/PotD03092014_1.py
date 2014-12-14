@@ -137,18 +137,18 @@ def addTwoNumbers(l1, l2):
             while node2:
                 newNodeInf = (transp + node2.info) % 10
                 l3.addNodeRear(newNodeInf)
+                transp = (transp + node2.info) / 10
                 node2 = node2.next
-                transp = 0
         elif not node2:
             while node1:
                 newNodeInf = (transp + node1.info) % 10
                 l3.addNodeRear(newNodeInf)
+                transp = (transp + node1.info) / 10
                 node1 = node1.next
-                transp = 0
         else:
             newNodeInf = (transp + node1.info + node2.info) % 10
             l3.addNodeRear(newNodeInf)
-            transp = (node2.info + node2.info) / 10
+            transp = (transp + node1.info + node2.info) / 10
             node1 = node1.next
             node2 = node2.next
 
