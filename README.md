@@ -15,15 +15,17 @@ Problem-of-the-day
 - PotD24062014_1 - add node front/rear
                  - delete V1/V2 node from list, reverse a list
 - PotD25062014_1 - get/delete middle node, delete kth node from rear
-- PotD26062014_1 - remove duplicate elements from a list
-	         - get the start node from the loop inside a list
-	         - add two lists as two numbers
+- PotD26062014_1
+  * remove duplicate elements from a list
+  * get the start node from the loop inside a list
+  * add two lists as two numbers
 - PotD29062014_1 - implemented stack operations: pop, peek, push, min
 - PotD29062014_2 - implemented a queue using two stacks
-- PotD01072014_1 - implemented BST add/delete Node 
-               - implemented inorder/preorder/postorder recursively
-	       - implemented getMin, getMax node of a BST
-- PotD02072014_2 - implemented trees for arithmetic expressions with unary/binary	operators
+- PotD01072014_1
+  * implemented BST add/delete Node 
+  * implemented inorder/preorder/postorder recursively
+  * implemented getMin, getMax node of a BST
+- PotD02072014_2 - implemented trees for arithmetic expressions with unary/binary operators
 - PotD06072014_1 - implemented inorder/preorder/postorder iteratively
 - PotD06072014_2 - implemented level by level tree traversal
 - PotD23072014_1 - Divide a string in N equal parts
@@ -48,59 +50,70 @@ Problem-of-the-day
 - PotD08082014_1 - Given an array of strings, find if the given strings can be chained to form a circle. A string X can be put before another string Y in circle if the last character of X is same as first character of Y.
 - PotD16082014_1 - Given two strings X and Y, find the length of the longest common subsequence.
 - PotD16082014_1 - Given two strings X and Y, find the length of the longest common substring.
-- PotD28082014_1 - Write a function that gets the nth element from a list
-               - Given a pointer to a node in a singly linked list delete that node
-               - Reverse a singly linked list iteratively
-- PotD28082014_2 - Write a function to get the nth node from the end of a singly linked list
-	       - Write a function to get the middle of a list
-               - Write a function to delete a list/ a node of a list
-               - Write a function that counts the number of times a given int occurs in a list
+- PotD28082014_1
+  * Write a function that gets the nth element from a list
+  * Given a pointer to a node in a singly linked list delete that node
+  * Reverse a singly linked list iteratively
+- PotD28082014_2
+  * Write a function to get the nth node from the end of a singly linked list
+  * Write a function to get the middle of a list
+  * Write a function to delete a list/ a node of a list
+  *  Write a function that counts the number of times a given int occurs in a list
 - PotD29082014_1 - Detect a loop in singly linked list
-- PotD02092014_1 - Get the average of the elements of a singly linked list
-	       - Reverse a doubly linked list
-               - Remove duplicates from an unsorted linked list
-               - Remove duplicates from a sorted linked list
-               - Reverse a singly linked list recursively
-               - Insert a new node in a sorted singly linked list
-               - Move last element to first in a singly linked list
-               - Pairwise swap elements in a given list
-               - Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed.
-               - Write a function that takes two lists, each of which is sorted in increasing order, and merges the two together into one list which is in increasing order.
-               - Given a Singly Linked List, starting from the second node delete all alternate nodes of it
-- PotD03092014_1 - Write a function that takes one list and divides up its nodes to make two smaller lists. The sublists should be made from alternating elements in the original list.
-               - Check if two lists are identical
-               - Write a function to insert a new value in a sorted Circular Linked List (CLL)
-               - Split a circular singly linked list in two halves
-               - Add two numbers represented by linked lists
-- PotD04092014_1 - Given a linked list of 0s, 1s and 2s, sort it. (O(n), S: O(1))
-		 	   - How to implement a stack which will support following operations in O(1) time complexity?
+- PotD02092014_1
+  * Get the average of the elements of a singly linked list
+  * Reverse a doubly linked list
+  * Remove duplicates from an unsorted linked list
+  * Remove duplicates from a sorted linked list
+  * Reverse a singly linked list recursively
+  * Insert a new node in a sorted singly linked list
+  * Move last element to first in a singly linked list
+  * Pairwise swap elements in a given list
+  * Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed.
+  * Write a function that takes two lists, each of which is sorted in increasing order, and merges the two together into one list which is in increasing order.
+  * Given a Singly Linked List, starting from the second node delete all alternate nodes of it
+- PotD03092014_1
+  * Write a function that takes one list and divides up its nodes to make two smaller lists. The sublists should be made from alternating elements in the original list.
+  * Check if two lists are identical
+  * Write a function to insert a new value in a sorted Circular Linked List (CLL)
+  * Split a circular singly linked list in two halves
+  * Add two numbers represented by linked lists
+- PotD04092014_1
+  * Given a linked list of 0s, 1s and 2s, sort it. (O(n), S: O(1))
+  * How to implement a stack which will support following operations in O(1) time complexity?
 1)  push() which adds an element to the top of stack.
 2)  pop()  which removes an element from top of stack.
 3)  findMiddle() which will return middle element of the stack.
 4)  deleteMiddle() which will delete the middle element.
 Push and pop are standard stack operations. 
-PotD08102014_1 - Compute the number of nodes in a binary tree (recursively and iteratively)
-			   - Preorder traversal (recursively and iteratively)
-			   - Inorder traversal (recursively and iteratively)
-               - Postorder traversal (recursively and iteratively)
-			   - Compute the height of a binary tree (recursively and iteratively)
-               - Level order traversal (BFS)
-               - Write a program to delete a binary tree.
-			   - Check that a binary tree is BST or not
-			   - Count the number of leaf nodes in a binary tree
-- PotD10102014_1 - Find the minimum node in a BST (O(n))
-               - Given a binary tree, print out all of its root-to-leaf paths one per line
-               - Find the diameter of a binary tree (O(n))
-               - Check if a binary tree is balanced.
-- PotD11102014_1 - Lowest common ancestor in a BST (O(h))
-			   - Level order traversal in spiral form(recursively and iteratively)
-- PotD12012014_1 - Given a Binary Tree  and a key, write a function that returns level of the key.   O(n)
-			   - Given a Binary Tree and a key, write a function that prints all the ancestors of the key in the given binary tree. O(n)
-			   - Check if a binary tree is subtree of another binary tree O(n)
-			   - "Given two values k1 and k2 (where k1 < k2) and a root pointer to a Binary Search Tree. Print all the keys of tree in range k1 to k2.  i.e. print all x such that k1<=x<=k2 and x is a key of given BST. Print  all the keys in increasing order O(n)"
-- PotD20102014_1 - Merge sort
-			   - Quick sort
+PotD08102014_1
+  * Compute the number of nodes in a binary tree (recursively and iteratively)
+    * Preorder traversal (recursively and iteratively)
+    * Inorder traversal (recursively and iteratively)
+    * Postorder traversal (recursively and iteratively)
+  * Compute the height of a binary tree (recursively and iteratively)
+  * Level order traversal (BFS)
+  * Write a program to delete a binary tree.
+  * Check that a binary tree is BST or not
+  * Count the number of leaf nodes in a binary tree
+- PotD10102014_1
+  * Find the minimum node in a BST (O(n))
+  * Given a binary tree, print out all of its root-to-leaf paths one per line
+  * Find the diameter of a binary tree (O(n))
+  * Check if a binary tree is balanced.
+- PotD11102014_1
+  * Lowest common ancestor in a BST (O(h))
+  * Level order traversal in spiral form(recursively and iteratively)
+- PotD12012014_1
+  * Given a Binary Tree  and a key, write a function that returns level of the key.   O(n)
+  * Given a Binary Tree and a key, write a function that prints all the ancestors of the key in the given binary tree. O(n)
+  * Check if a binary tree is subtree of another binary tree O(n)
+  * "Given two values k1 and k2 (where k1 < k2) and a root pointer to a Binary Search Tree. Print all the keys of tree in range k1 to k2.  i.e. print all x such that k1<=x<=k2 and x is a key of given BST. Print  all the keys in increasing order O(n)"
+- PotD20102014_1
+  * Merge sort
+  * Quick sort
 - PotD22102014 - HeapSort
-- PotD23102014 - CountingSort
-             - nth Fibonacci element
-             - print a graphBFS
+- PotD23102014
+  * CountingSort
+  * nth Fibonacci element
+  * print a graphBFS
