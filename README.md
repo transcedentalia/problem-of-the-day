@@ -116,4 +116,6 @@ PotD08102014_1
 - PotD23102014
   * CountingSort
   * nth Fibonacci element
-  * print a graphBFS
+  * print a graph BFS
+  * print a graph DFS
+  * topological sort
